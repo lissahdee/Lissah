@@ -1,5 +1,5 @@
-=begin
-# (octothorpe) - used as a "comment" character; anything that follows is not seem by the interpreter
+begin
+# (octothorpe) - used as a "comment" character; anything that follows on that line is not seen by the interpreter
 #{$0} - from the command line, the name of the script you are running
 #{variable} - used for string interpolation, substitiutes the vaue for variable in a statement 
 $ - prepends a variable from the command line ($0 is the actual name of the script run)

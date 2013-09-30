@@ -1,0 +1,60 @@
+$ irb
+irb(main):001:0> require './ex25' #Here we "require" ./ex25.rb Ruby file, just like other requires you have done. Notice you do not need to put the .rb at the end to require it. When you do this you make a module that has all your functions in it to use.
+=> true
+
+irb(main):002:0> sentence = "All good things come to those who wait." #making a sentence to work with
+=> "All good things come to those who wait."
+
+irb(main):003:0> words = Ex25.break_words(sentence) #using the Ex25 module and call your first function Ex25.break_words. The . (dot, period) symbol is how you tell Ruby, "Hey, inside Ex25 there's a function called break_words and I want to run it."
+=> ["All", "good", "things", "come", "to", "those", "who", "wait."]
+
+irb(main):004:0> sorted_words = Ex25.sort_words(words)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+
+irb(main):005:0> Ex25.print_first_word(words)
+All
+=> nil
+
+irb(main):006:0> Ex25.print_last_word(words)
+wait.
+=> nil
+
+irb(main):007:0> Ex25.wrods
+NoMethodError: undefined method `wrods' for Ex25:Module
+        from (irb):6
+
+irb(main):008:0> words
+=> ["good", "things", "come", "to", "those", "who"]
+
+irb(main):009:0> Ex25.print_first_word(sorted_words)
+All
+=> nil
+
+irb(main):010:0> Ex25.print_last_word(sorted_words)
+who
+=> nil
+
+irb(main):011:0> sorted_words
+=> ["come", "good", "things", "those", "to", "wait."]
+
+irb(main):012:0> Ex25.sort_sentence(sentence)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+
+irb(main):013:0> Ex25.print_first_and_last(sentence)
+All
+wait.
+=> nil
+
+irb(main):014:0> Ex25.print_first_and_last_sorted(sentence)
+All
+who
+=> nil
+
+irb(main):015:0> ^D
+$
+	
+end
+
+
+
+
